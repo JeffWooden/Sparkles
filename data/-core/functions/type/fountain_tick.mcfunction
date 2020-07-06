@@ -8,11 +8,9 @@ scoreboard objectives add ftemp dummy
 scoreboard players set xmax ftemp 360
 scoreboard players set ymax ftemp 22
 summon area_effect_cloud ~ ~1 ~ {Tags:["random"],Age:1}
-execute store result score xrand ftemp run data get entity @e[type=area_effect_cloud,tag=random,limit=1] UUIDMost 0.0000000000000028306434
+execute store result score xrand ftemp run data get entity @e[type=area_effect_cloud,tag=random,limit=1] UUID[0]
 scoreboard players operation xrand ftemp %= xmax ftemp
-kill @e[type=area_effect_cloud,tag=random]
-summon area_effect_cloud ~ ~1 ~ {Tags:["random"],Age:1}
-execute store result score yrand ftemp run data get entity @e[type=area_effect_cloud,tag=random,limit=1] UUIDMost 0.0000000000000028306434
+execute store result score yrand ftemp run data get entity @e[type=area_effect_cloud,tag=random,limit=1] UUID[1]
 scoreboard players operation yrand ftemp %= ymax ftemp
 kill @e[type=area_effect_cloud,tag=random]
 scoreboard players remove yrand ftemp 90
