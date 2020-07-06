@@ -20,6 +20,3 @@ execute at @e[tag=fw.comet] run particle flame ~ ~ ~ 0 0 0 0.05 1 force @a[dista
 execute as @e[tag=fw.sphere_sub] run function -core:particles
 execute as @e[tag=fw.sphere_sub] at @s run tp @s ^ ^ ^0.25
 #execute at @e[tag=fw.sphere_sub] run particle flame ~ ~ ~ 0 0 0 0.02 1 force @a
-# Notes:
-# ATTENTION A CHANGER LE SYSTEME DE RANDOM (-core:bdb/summon & -core:type/fountain_tick)
-# METTRE A JOUR LES PARTICULES (-core:particles & -core:type/set_particle)
