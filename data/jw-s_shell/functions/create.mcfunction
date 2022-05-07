@@ -15,7 +15,7 @@ scoreboard players add #max jw-s_id 1
 scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=child,tag=init,limit=1,sort=nearest] jw-s_id = #max jw-s_id
 
 #   Application nbt
-data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
+data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
 
 #   Créations des enfants
 execute store result score l jw-s_calc run data get entity @s data.childs
