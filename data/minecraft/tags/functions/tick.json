@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
-        "jw-s:tick"
+        "jw-s:tick",
+        "jw-s_shell:tick"
     ]
 }
