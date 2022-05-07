@@ -5,14 +5,14 @@
               "text": "Sparkles"
             },
             {
-              "text": "(v0.5)",
+              "text": "(v2.0)",
               "color": "blue",
               "bold": true
             }
         ],
         "description": "Play your firework show into the game.",
         "icon": {
-            "item": "minecraft:player_head",
+            "item": "minecraft:firework_rocket",
             "nbt": "{}"
         },
         "announce_to_chat": false,
