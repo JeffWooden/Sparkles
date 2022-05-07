@@ -1,4 +1,7 @@
-##  context : as <Marker:component>
+#> jw-s_component:load/pos
+#@context as <Marker:component>
+#@within jw-s_component:load
+
 #   Position
 ##  Entité
 execute store result score x jw-s_calc run data get entity @s Pos[0] 100
