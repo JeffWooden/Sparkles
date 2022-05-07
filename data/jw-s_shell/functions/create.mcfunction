@@ -1,5 +1,5 @@
 #> jw-s_shell:create
-tellraw @a[tag=debug] "jw-s_shell:create"
+tellraw @a[tag=debug-tellraw] "jw-s_shell:create"
 #@context as <Marker:component> at @s
 #@within jw-s_component:create
 #@input

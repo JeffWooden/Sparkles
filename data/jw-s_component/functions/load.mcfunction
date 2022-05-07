@@ -1,5 +1,5 @@
 #> jw-s_component:load
-tellraw @a[tag=debug] "jw-s_component:load"
+tellraw @a[tag=debug-tellraw] "jw-s_component:load"
 #@context as <Marker:component>
 #@within jw-s_component:load
 
