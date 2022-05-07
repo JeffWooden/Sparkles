@@ -3,5 +3,6 @@ tellraw @a ["",{"text":"Sparkles","bold":true,"hoverEvent":{"action":"show_text"
 
 #   Tableaux
 scoreboard objectives add jw-s_fuse dummy
+scoreboard objectives add jw-s_id dummy
 scoreboard objectives add jw-s_life dummy
 scoreboard objectives add jw-s_type dummy
