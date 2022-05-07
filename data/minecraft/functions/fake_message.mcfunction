@@ -1,1 +1,0 @@
-tellraw @a [{"text":"<"},{"selector":"@s[name=!_Supraconducteur]"},{"text":"> LOL"}]

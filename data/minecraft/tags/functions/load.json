@@ -1,7 +1,6 @@
 {
     "replace": false,
-    "values": 
-    [
-    	"-core:reload"
+    "values": [
+        "jw_s:load"
     ]
 }

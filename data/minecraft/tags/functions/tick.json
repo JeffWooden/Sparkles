@@ -1,7 +1,6 @@
 {
     "replace": false,
-    "values": 
-    [
-    	"-core:loop"
+    "values": [
+        "jw_s:tick"
     ]
 }

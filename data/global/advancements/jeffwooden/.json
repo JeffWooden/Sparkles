@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": [
+            {
+              "text": "Sparkles"
+            },
+            {
+              "text": "(v0.5)",
+              "color": "blue",
+              "bold": true
+            }
+        ],
+        "description": "Play your firework show into the game.",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{}"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:jeffwooden",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

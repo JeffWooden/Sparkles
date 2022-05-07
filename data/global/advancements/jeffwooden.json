@@ -1,0 +1,22 @@
+{
+    "display": {
+        "title": {
+            "text": "JeffWooden",
+            "bold": true,
+            "italic": false
+        },
+        "description": "",
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner: \"JeffWooden\"}"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:root",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
