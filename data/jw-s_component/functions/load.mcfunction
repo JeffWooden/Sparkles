@@ -6,7 +6,7 @@ execute store result score @s jw-s_type run data get storage jw-s:storage compon
 execute if data storage jw-s:storage component.pos run function jw-s_component:load/pos
 
 #   onGround
-execute if data storage jw-s:storage component.onGround at @s run function jw-s_component:load/onground
+execute if data storage jw-s:storage {component:{onGround:1}} at @s run function jw-s_component:load/onground
 
 #   Coquille
 data modify entity @s data set from storage jw-s:storage component.shell
