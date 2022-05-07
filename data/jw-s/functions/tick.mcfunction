@@ -1,0 +1,1 @@
+execute at @e[type=marker,tag=jw-s-component] run particle dust 0.878 0.22 0.22 2 ~ ~ ~ 0 0 0 0.01 1

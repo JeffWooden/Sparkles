@@ -1,4 +1,5 @@
 #> jw-s_component:create
+tellraw @a[tag=debug] "jw-s_component:create"
 #@context as <Summoner> at @s
 #@input storage 'jw-s:storage component'
 
