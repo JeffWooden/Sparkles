@@ -13,7 +13,7 @@ execute if score @s jw-s_type matches 0 run summon marker ~ ~ ~ {Tags:["jw-s-she
 execute if score @s jw-s_type matches 1 run summon firework_rocket ~ ~ ~ {Tags:["jw-s-shell","init"]}
 
 #   Application nbt
-data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=init,limit=1,sort=nearest] {} set from entity @s data.shell
+data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
 
 #   Meurtre component
 kill @s
