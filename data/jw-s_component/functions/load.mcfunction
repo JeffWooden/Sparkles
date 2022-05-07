@@ -12,8 +12,5 @@ execute if data storage jw-s:storage data.pos run function jw-s_component:load/p
 #   onGround
 execute if data storage jw-s:storage {data:{onGround:1}} at @s run function jw-s_component:load/on-ground
 
-#   Coquille
-##  Informations
-data modify entity @s data set from storage jw-s:storage data.shell
-##  Création
+#   Création Coquille
 execute as @s at @s run function jw-s_shell:create
