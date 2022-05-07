@@ -17,5 +17,10 @@ scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=child,tag=in
 #   Application nbt
 data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
 
+#   Créations des enfants
+execute store result score l jw-s_calc run data get entity @s data.childs
+execute if score l jw-s_calc matches 1.. run tag @e[type=#jw-s:shell,tag=jw-s-shell,tag=init,limit=1,sort=nearest] add has-childs
+execute if score l jw-s_calc matches 1.. run function jw-s_shell:create/childs
+
 #   Meurtre component
 kill @s
