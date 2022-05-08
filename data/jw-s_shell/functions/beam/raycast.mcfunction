@@ -11,6 +11,6 @@ tag @e[type=area_effect_cloud,tag=jw-s-beam_particle,tag=init,limit=1,sort=neare
 
 #   Téléportation + vie
 scoreboard players remove c jw-s_calc 1
-execute if score c jw-s_calc matches 1.. unless entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,distance=..0.1] positioned ^ ^ ^0.1 run function jw-s_shell:beam/raycast
-execute if entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,distance=..0.1] run kill @s
+execute if score c jw-s_calc matches 1.. unless entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,distance=..0.5] positioned ^ ^ ^0.5 run function jw-s_shell:beam/raycast
+execute if entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,distance=..0.5] run kill @s
 execute unless score c jw-s_calc matches 1.. run kill @s

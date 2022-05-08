@@ -9,4 +9,4 @@ scoreboard objectives add jw-s_type dummy
 scoreboard objectives add jw-s_var dummy
 
 #   Constantes
-scoreboard players set beamMaxLength jw-s_var 1000
+scoreboard players set beamMaxLength jw-s_var 200
