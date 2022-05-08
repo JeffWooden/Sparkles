@@ -5,5 +5,8 @@ tellraw @a ["",{"text":"Sparkles","bold":true,"hoverEvent":{"action":"show_text"
 scoreboard objectives add jw-s_fuse dummy
 scoreboard objectives add jw-s_id dummy
 scoreboard objectives add jw-s_life dummy
+scoreboard objectives add jw-s_type dummy
 scoreboard objectives add jw-s_var dummy
 
+#   Constantes
+scoreboard players set beamMaxLength jw-s_var 1000
