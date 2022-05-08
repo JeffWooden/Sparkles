@@ -24,9 +24,7 @@ execute as @e[type=marker,tag=jw-s-beam_target,limit=1] at @s run tp ~ ~ ~
 data modify storage jw-s:storage beam set from entity @s data.beam
 data modify storage jw-s:storage beam.Particle merge from entity @s data.path[0].particle
 scoreboard players operation c jw-s_calc = beamMaxLength jw-s_var
-execute at @s as @e[type=marker,tag=jw-s-beam_target,limit=1] facing entity @e[type=#jw-s:shell,tag=jw-s-beam,tag=this,limit=1] eyes at @s positioned ^ ^ ^1 run particle dust 0.18 0.545 0.961 2 ~ ~ ~ 0 0 0 0.03 1
-execute at @e[type=marker,tag=jw-s-beam_target,limit=1] run particle dust 0.941 0.118 0.667 2 ~ ~ ~ 0 0 0 0.03 1
-# execute at @s as @e[type=marker,tag=jw-s-beam_target,limit=1] facing ~ ~ ~ at @s run function jw-s_shell:beam/raycast
+execute as @e[type=marker,tag=jw-s-beam_target,limit=1] at @s facing entity @e[type=#jw-s:shell,tag=jw-s-beam,tag=this,limit=1] eyes positioned ^ ^ ^1 run function jw-s_shell:beam/raycast
 
 #   Fin
 tag @s remove this
