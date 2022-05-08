@@ -22,7 +22,7 @@ execute as @e[type=marker,tag=jw-s-beam_target,limit=1] at @s run tp ~ ~ ~
 
 #   Raycast faisceau
 data modify storage jw-s:storage beam set from entity @s data.beam
-data modify storage jw-s:storage beam.Particle merge from entity @s data.path[0].particle
+execute if data entity @s data.path[0].particle run data modify storage jw-s:storage beam.Particle set from entity @s data.path[0].particle
 scoreboard players operation c jw-s_calc = beamMaxLength jw-s_var
 execute as @e[type=marker,tag=jw-s-beam_target,limit=1] at @s facing entity @e[type=#jw-s:shell,tag=jw-s-beam,tag=this,limit=1] eyes positioned ^ ^ ^1 run function jw-s_shell:beam/raycast
 
