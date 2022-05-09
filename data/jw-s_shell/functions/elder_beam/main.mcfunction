@@ -1,10 +1,10 @@
-#> jw-s_shell:beam/main
+#> jw-s_shell:elder_beam/main
 #@nodebug
-#@context as <Shell:beam> at @s
+#@context as <Shell:elder_beam> at @s
 #@within jw-s_shell:tick
 
 #   Création du faisceau
-function jw-s_shell:beam/init
+function jw-s_shell:elder_beam/init
 
 #   Itération des positions du chemin
 scoreboard players remove @s jw-s_fuse 1
