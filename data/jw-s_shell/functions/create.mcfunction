@@ -20,6 +20,7 @@ execute if score @s jw-s_type matches 3 run summon marker ~ ~ ~ {Tags:["jw-s-she
 #   Application nbt
 data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
 execute if score @s jw-s_type matches 2..3 as @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] store result score @s jw-s_fuse run data get entity @s data.path[0].fuse
+execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_fuse=..0}] run function jw-s_shell:beam/main
 
 #   Créations des enfants
 execute store result score l jw-s_calc run data get entity @s data.childs
