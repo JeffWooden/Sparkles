@@ -4,7 +4,7 @@
 #@within jw-s_shell:beam/init
 
 #   Particule
-function jw-s_shell:beam/particle
+function #jw-s:particle_id
 
 #   Gestion meurtre beam target
 scoreboard players remove l jw-s_calc 1
