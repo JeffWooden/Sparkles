@@ -1,1 +1,1 @@
-particle block_marker air ~ ~ ~ 0 0 0 0 1
+particle block_marker air ~ ~ ~ 0 0 0 0 1 force @a
