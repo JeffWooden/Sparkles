@@ -23,6 +23,7 @@ execute if score @s jw-s_type matches 4 run summon marker ~ ~ ~ {Tags:["jw-s-she
 data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,tag=set_fuse,limit=1,sort=nearest] store result score @s jw-s_fuse run data get entity @s data.path[0].fuse
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_fuse=..0}] run function jw-s_shell:beam/main
+execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-fountain,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_fuse=..0}] run function jw-s_shell:fountain/main
 
 #   Créations des enfants
 execute store result score l jw-s_calc run data get entity @s data.childs
