@@ -12,3 +12,4 @@ scoreboard objectives add jw-s_var dummy
 scoreboard players set elder_beamMaxLength jw-s_var 200
 scoreboard players set beamMaxLength jw-s_var 200
 scoreboard players set beamDefaultLength jw-s_var 60
+scoreboard players set fountainJetDefaultLife jw-s_var 200
