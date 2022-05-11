@@ -7,6 +7,7 @@
 #   Jet d'eau
 summon snowball ~ ~ ~ {Item:{id:"minecraft:stone_button",Count:1b,tag:{}},Motion:[0.0,0.0,0.0],Tags:["jw-s-fountain_jet","init"]}
 ##  Application apparence
+data modify entity @e[type=snowball,tag=jw-s-fountain_jet,tag=init,limit=1,sort=nearest] Item merge from entity @s data.item
 ### ID
 execute if data entity @s data.motions[0].particle.id store result score @e[type=snowball,tag=jw-s-fountain_jet,tag=init,limit=1,sort=nearest] jw-s_partId run data get entity @s data.motions[0].particle.id
 execute unless data entity @s data.motions[0].particle.id store result score @e[type=snowball,tag=jw-s-fountain_jet,tag=init,limit=1,sort=nearest] jw-s_partId run data get entity @s data.particle.id
