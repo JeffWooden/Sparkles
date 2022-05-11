@@ -5,7 +5,7 @@
 #@input entity @s data.motions[0]
 
 #   Jet d'eau
-summon snowball ~ ~ ~ {Item:{id:"minecraft:lapis_block",Count:1b,tag:{}},Motion:[0.0,0.5,0.0],Tags:["jw-s-fountain_jet","init"]}
+summon snowball ~ ~ ~ {Item:{id:"minecraft:lapis_block",Count:1b,tag:{}},Motion:[0.0,0.0,0.0],Tags:["jw-s-fountain_jet","init"]}
 ##  Application texture
 execute if data entity @s data.motions[0].item run data modify entity @e[type=snowball,tag=jw-s-fountain_jet,tag=init,limit=1,sort=nearest] Item merge from entity @s data.motions[0].item
 execute unless data entity @s data.motions[0].item run data modify entity @e[type=snowball,tag=jw-s-fountain_jet,tag=init,limit=1,sort=nearest] Item merge from entity @s data.item
