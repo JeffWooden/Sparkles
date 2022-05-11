@@ -10,4 +10,5 @@ tp @e[type=marker,tag=jw-s-component,tag=summoner,tag=selected] @s
 execute as @e[type=marker,tag=jw-s-component,tag=summoner,tag=selected] at @s run function jw-s_component:load
 
 #   Fin
+tag @e[type=marker,tag=jw-s-component] remove selected
 kill @s[type=!player]
