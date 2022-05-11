@@ -7,3 +7,4 @@ execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam] at @s run function 
 
 #   Fontaine
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-fountain] at @s run function jw-s_shell:fountain/main
+execute as @e[type=snowball,tag=jw-s-fountain_jet] at @s run function #jw-s:particle_id
