@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "minecraft:marker",
-        "minecraft:firework_rocket"
+        "minecraft:firework_rocket",
+        "minecraft:snowball"
     ]
 }
