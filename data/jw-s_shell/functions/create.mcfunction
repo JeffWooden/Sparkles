@@ -36,5 +36,5 @@ execute if score l jw-s_calc matches 1.. run tag @e[type=#jw-s:shell,tag=jw-s-sh
 execute if score l jw-s_calc matches 1.. run function jw-s_shell:create/childs
 
 #   Meurtre component
-tag @e[type=firework_rocket,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] remove init
+tag @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] remove init
 kill @s
