@@ -11,4 +11,5 @@ scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=i
 execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_partId run data get entity @s data.shell.particle.id
 execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_partOption run data get entity @s data.shell.particle.option
 ##  Swirl
-execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_calc run data get entity @s data.shell.particle.swirl
+execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_swirlLength run data get entity @s data.shell.particle.swirl.length
+execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_swirlDuration run data get entity @s data.shell.particle.swirl.duration
