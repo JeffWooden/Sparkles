@@ -13,6 +13,6 @@ scoreboard objectives add jw-s_var dummy
 #   Constantes
 scoreboard players set elder_beamMaxLength jw-s_var 200
 scoreboard players set beamMaxLength jw-s_var 200
-scoreboard players set cometDefaultFuse jw-s_var 200
+scoreboard players set cometDefaultLife jw-s_var 200
 scoreboard players set beamDefaultLength jw-s_var 60
 scoreboard players set fountainJetDefaultLife jw-s_var 200
