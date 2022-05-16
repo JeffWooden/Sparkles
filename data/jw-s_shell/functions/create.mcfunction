@@ -19,7 +19,7 @@ execute if score @s jw-s_type matches 1 run summon firework_rocket ~ ~ ~ {Tags:[
 execute if score @s jw-s_type matches 2 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-elder_beam"],data:{elder_beam:{Particle:"electric_spark",Radius:0.1f,Duration:2,Tags:["jw-s-elder_beam"]}},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
 execute if score @s jw-s_type matches 3 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-beam"],data:{beam:{particle:{id:0,option:0},Tags:["jw-s-beam"]}},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
 execute if score @s jw-s_type matches 4 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-fountain"],data:{particle:{id:0,option:0}},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
-execute if score @s jw-s_type matches 5 run summon snowball ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-comet"],Item:{id:"minecraft:snowball",Count:1b},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
+execute if score @s jw-s_type matches 5 run summon snowball ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-comet"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
 
 #   Application nbt
 data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
