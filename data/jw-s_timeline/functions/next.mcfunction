@@ -4,6 +4,7 @@
 #   Itération
 ##  Création component
 data modify storage jw-s:storage component set from entity @s data.temp[0]
+data remove storage jw-s:storage component.delay
 function jw-s_component:create
 ##  Suite
 data remove entity @s data.temp[0]
