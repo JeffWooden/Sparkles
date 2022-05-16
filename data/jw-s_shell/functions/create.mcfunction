@@ -32,7 +32,7 @@ execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-fountain,tag=!child,tag=i
 #   Créations des enfants
 execute store result score l jw-s_calc run data get entity @s data.childs
 execute if score l jw-s_calc matches 1.. run scoreboard players add #max jw-s_id 1
-execute if score l jw-s_calc matches 1.. if score #max jw-s_id matches 2147483640 run scoreboard players reset #max jw-s_id
+execute if score l jw-s_calc matches 1.. if score #max jw-s_id matches 2147483640 run scoreboard players set #max jw-s_id 0
 execute if score l jw-s_calc matches 1.. run scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=child,tag=init,limit=1,sort=nearest] jw-s_id = #max jw-s_id
 execute if score l jw-s_calc matches 1.. run tag @e[type=#jw-s:shell,tag=jw-s-shell,tag=child,tag=init,limit=1,sort=nearest] remove init
 execute if score l jw-s_calc matches 1.. run tag @e[type=#jw-s:shell,tag=jw-s-shell,tag=init,limit=1,sort=nearest] add has-childs
