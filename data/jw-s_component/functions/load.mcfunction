@@ -18,3 +18,4 @@ execute if data entity @s {data:{onGround:1}} at @s run function jw-s_component:
 #   Création Coquille
 execute as @s[scores={jw-s_life=..0}] at @s run function jw-s_shell:create
 tag @s remove summoner
+tag @s remove init
