@@ -10,6 +10,6 @@ scoreboard players operation c jw-s_calc = @s jw-s_swirlLength
 #  Index rotation raycast
 scoreboard players operation @s jw-s_calc += @s jw-s_swirlDuration
 scoreboard players operation t jw-s_calc = @s jw-s_calc
-scoreboard players operation t jw-s_calc %= swirldDuration jw-s_var
+scoreboard players operation t jw-s_calc %= swirlDuration jw-s_var
 #   Set direction raycast
 function jw-s_shell:comet/raycast-rotations/l5/0-39
