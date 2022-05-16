@@ -17,6 +17,7 @@ scoreboard players set 20 jw-s_var 20
 scoreboard players set elder_beamMaxLength jw-s_var 200
 scoreboard players set beamMaxLength jw-s_var 200
 scoreboard players set cometDefaultLife jw-s_var 200
+scoreboard players set cometDefaultLength jw-s_var 200
 scoreboard players set beamDefaultLength jw-s_var 60
 scoreboard players set fountainJetDefaultLife jw-s_var 200
 scoreboard players set swirlDuration jw-s_var 40

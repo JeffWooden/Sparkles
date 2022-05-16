@@ -12,6 +12,8 @@ execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=ini
 execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_partOption run data get entity @s data.shell.particle.option
 ##  Swirl
 execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_swirlLength run data get entity @s data.shell.particle.swirl.length
+execute if data entity @s data.shell.particle.swirl run scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_swirlLength=..0}] jw-s_swirlLength = cometDefaultLength jw-s_var
 execute store result score @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_swirlDuration run data get entity @s data.shell.particle.swirl.duration
+scoreboard players set @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_swirlDuration=..0}] jw-s_swirlDuration 1
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] store result score @s jw-s_calc run data get entity @s UUID[0]
 scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_calc %= swirlDuration jw-s_var
