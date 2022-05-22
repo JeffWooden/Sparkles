@@ -21,8 +21,8 @@ execute store result entity @e[type=marker,tag=jw-s-beam_target,limit=1] Pos[2] 
 execute as @e[type=marker,tag=jw-s-beam_target,limit=1] at @s run tp ~ ~ ~
 
 #   Raycast faisceau
-execute store result score @e[type=marker,tag=jw-s-beam_target,limit=1] jw-s_partID run data get entity @s data.beam.particle.id
-execute if data entity @s data.path[0].particle.id store result score @e[type=marker,tag=jw-s-beam_target,limit=1] jw-s_partID run data get entity @s data.path[0].particle.id
+execute store result score @e[type=marker,tag=jw-s-beam_target,limit=1] jw-s_partId run data get entity @s data.beam.particle.id
+execute if data entity @s data.path[0].particle.id store result score @e[type=marker,tag=jw-s-beam_target,limit=1] jw-s_partId run data get entity @s data.path[0].particle.id
 execute store result score @e[type=marker,tag=jw-s-beam_target,limit=1] jw-s_partOption run data get entity @s data.beam.particle.option
 execute if data entity @s data.path[0].particle.option store result score @e[type=marker,tag=jw-s-beam_target,limit=1] jw-s_partOption run data get entity @s data.path[0].particle.option
 execute store result score l jw-s_calc run data get entity @s data.path[0].length
