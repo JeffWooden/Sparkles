@@ -1,4 +1,5 @@
 #> jw-s_timeline:force-stop
+tellraw @a[tag=debug-tellraw] "jw-s_timeline:force-stop"
 #@context as <?:timeline> || as Player
 
 execute unless entity @s[type=marker,tag=jw-s_timeline] as @e[type=marker,tag=jw-s_timeline] run function jw-s_timeline:stop

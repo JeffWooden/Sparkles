@@ -1,4 +1,5 @@
 #> jw-s_shell:comet/raycast-init
+tellraw @a[tag=debug-tellraw] "jw-s_shell:comet/raycast-init"
 #@context as <Shell:comet> at @s
 #@within jw-s_shell:comet/main
 #@input scoreboard

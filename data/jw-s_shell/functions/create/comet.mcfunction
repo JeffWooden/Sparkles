@@ -1,4 +1,5 @@
 #> jw-s_shell:create/comet
+tellraw @a[tag=debug-tellraw] "jw-s_shell:create/comet"
 #@context as <Marker:component> at @s
 #@within jw-s_shell:create
 

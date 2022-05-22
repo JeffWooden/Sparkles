@@ -1,4 +1,5 @@
 #> jw-s_timeline:launch-check
+tellraw @a[tag=debug-tellraw] "jw-s_timeline:launch-check"
 #@context as <?:timeline> at @s
 #@input @s data.timeline[<Array:Shell>]
 

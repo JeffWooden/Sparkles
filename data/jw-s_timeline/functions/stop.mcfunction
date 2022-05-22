@@ -1,4 +1,5 @@
 #> jw-s_timeline:stop
+tellraw @a[tag=debug-tellraw] "jw-s_timeline:stop"
 #@context as <?:timeline> at @s
 
 #   Réinitialisation

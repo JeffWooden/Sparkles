@@ -1,4 +1,5 @@
 #> jw-s_timeline:next
+tellraw @a[tag=debug-tellraw] "jw-s_timeline:next"
 #@context as <?:timeline> at @s
 
 #   Itération
