@@ -7,5 +7,6 @@ tellraw @a[tag=debug-tellraw] "jw-s_timeline:launch"
 tag @s add jw-s_timeline
 #   Initialisation des nbt
 data modify entity @s data.temp set from entity @s data.timeline
+execute store result score @s jw-s_length run data get entity @s data.temp
 execute store result score @s jw-s_fuse run data get entity @s data.temp[0].delay
 execute as @s[scores={jw-s_fuse=..0}] run function jw-s_timeline:next
