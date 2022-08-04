@@ -1,5 +1,4 @@
 #> jw-s_component:load/pos
-tellraw @a[tag=debug-tellraw] "jw-s_component:load/pos"
 #@context as <Marker:component>
 #@within jw-s_component:load
 

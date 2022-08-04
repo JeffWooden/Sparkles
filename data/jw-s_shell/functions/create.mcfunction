@@ -1,5 +1,4 @@
 #> jw-s_shell:create
-tellraw @a[tag=debug-tellraw] "jw-s_shell:create"
 #@context as <Marker:component> at @s
 #@within jw-s_component:create
 #@input
@@ -14,14 +13,15 @@ tellraw @a[tag=debug-tellraw] "jw-s_shell:create"
 #alias entity Shell @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest]
 
 #   Création
-execute if score @s jw-s_type matches 0 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
-execute if score @s jw-s_type matches 1 run summon firework_rocket ~ ~ ~ {Tags:["jw-s-shell","init"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
-execute if score @s jw-s_type matches 2 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-elder_beam"],data:{elder_beam:{Particle:"electric_spark",Radius:0.1f,Duration:2,Tags:["jw-s-elder_beam"]}},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
-execute if score @s jw-s_type matches 3 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-beam"],data:{beam:{particle:{id:0,option:0},Tags:["jw-s-beam"]}},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
-execute if score @s jw-s_type matches 4 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-fountain"],data:{particle:{id:0,option:0}},Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
-execute if score @s jw-s_type matches 5 run summon snowball ~ ~ ~ {Tags:["jw-s-shell","init","set_fuse","jw-s-comet"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
+execute if score @s jw-s_type matches 0 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","summoner"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
+execute if score @s jw-s_type matches 1 run summon firework_rocket ~ ~ ~ {Tags:["jw-s-shell","init","summoner"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
+execute if score @s jw-s_type matches 2 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","summoner","set_fuse","jw-s-elder_beam"],data:{elder_beam:{Particle:"electric_spark",Radius:0.1f,Duration:2,Tags:["jw-s-elder_beam"]}}}
+execute if score @s jw-s_type matches 3 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","summoner","set_fuse","jw-s-beam"],data:{beam:{particle:{id:0,option:0},Tags:["jw-s-beam"]}}}
+execute if score @s jw-s_type matches 4 run summon marker ~ ~ ~ {Tags:["jw-s-shell","init","summoner","set_fuse","jw-s-fountain"],data:{particle:{id:0,option:0}}}
+execute if score @s jw-s_type matches 5 run summon snowball ~ ~ ~ {Tags:["jw-s-shell","init","summoner","set_fuse","jw-s-comet"],Passengers:[{id:"minecraft:marker",Tags:["jw-s-shell","child","init"]}]}
 
 #   Application nbt
+scoreboard players operation @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] jw-s_show_parent = @s jw-s_show_parent
 data modify entity @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] {} merge from entity @s data.shell
 execute if score @s jw-s_type matches 2..3 as @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] store result score @s jw-s_fuse run data get entity @s data.path[0].fuse
 execute if score @s jw-s_type matches 4 as @e[type=#jw-s:shell,tag=jw-s-shell,tag=!child,tag=init,limit=1,sort=nearest] store result score @s jw-s_fuse run data get entity @s data.motions[0].fuse
