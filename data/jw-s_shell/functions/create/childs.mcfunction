@@ -1,4 +1,5 @@
 #> jw-s_shell:create/childs
+tellraw @a[tag=debug-tellraw] "jw-s_shell:create/childs"
 #@context as <Marker:component> at @s
 #@within jw-s_shell:create
 
@@ -7,7 +8,6 @@
 #   Création
 summon marker ~ ~ ~ {Tags:["jw-s-component","summoner","init"]}
 scoreboard players operation @e[type=marker,tag=jw-s-component,tag=summoner,tag=init,limit=1,sort=nearest] jw-s_id = #max jw-s_id
-scoreboard players operation @e[type=marker,tag=jw-s-component,tag=summoner,tag=init,limit=1,sort=nearest] jw-s_show_parent = @s jw-s_show_parent
 data modify entity @e[type=marker,tag=jw-s-component,tag=summoner,tag=init,limit=1,sort=nearest] data set from entity @s data.childs[0]
 tag @e[type=marker,tag=jw-s-component,tag=summoner,tag=init,limit=1,sort=nearest] remove init
 

@@ -4,7 +4,6 @@
 #   Réinitialisation
 ##  Tag·s
 tag @s remove jw-s_timeline
-tag @s remove ready
 ##  data
 data remove entity @s data.temp
 ##  score

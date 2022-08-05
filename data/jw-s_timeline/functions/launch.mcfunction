@@ -1,10 +1,10 @@
 #> jw-s_timeline:launch
 #@context as <?:timeline> at @s
-#@within jw-s_timeline:launch-check
+#@input @s data.timeline[<Array:Shell>]
 
-##  Ciblage des effets
-scoreboard players operation id jw-s_calc = @s jw-s_id
-execute as @e[type=#jw-s:shell,tag=jw-s-component,tag=ready] if score @s jw-s_show_parent = id jw-s_calc run tag @s remove ready
-
-##  Fin
-tag @s remove ready
+#   Ajout des tags
+tag @s add jw-s_timeline
+#   Initialisation des nbt
+data modify entity @s data.temp set from entity @s data.timeline
+execute store result score @s jw-s_fuse run data get entity @s data.temp[0].delay
+execute as @s[scores={jw-s_fuse=..0}] run function jw-s_timeline:next

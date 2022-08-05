@@ -1,4 +1,5 @@
 #> jw-s_shell:explode
+tellraw @a[tag=debug-tellraw] "jw-s_shell:explode"
 #@context as <?:Shell child> at @s
 #@within jw-s_shell:tick
 
