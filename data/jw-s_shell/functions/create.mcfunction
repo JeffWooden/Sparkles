@@ -29,6 +29,9 @@ execute if score @s jw-s_type matches 5 run function jw-s_shell:create/comet
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_fuse=..0}] run function jw-s_shell:beam/main
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-fountain,tag=!child,tag=init,limit=1,sort=nearest,scores={jw-s_fuse=..0}] run function jw-s_shell:fountain/main
 
+#   Son lancement
+execute if data entity @s data.sound.launch run function jw-s_shell:sound/launch
+
 #   Créations des enfants
 execute store result score l jw-s_calc run data get entity @s data.childs
 execute if score l jw-s_calc matches 1.. run scoreboard players add #max jw-s_id 1

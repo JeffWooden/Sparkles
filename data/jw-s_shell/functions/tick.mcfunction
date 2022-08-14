@@ -11,3 +11,7 @@ execute as @e[type=snowball,tag=jw-s-fountain_jet] at @s run function #jw-s:part
 
 #   Comète
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-comet] at @s run function jw-s_shell:comet/main
+
+#   Ondes sonores
+execute as @e[type=marker,tag=jw-s-sound_wave] at @s run function jw-s_shell:sound/main
+kill @e[type=marker,tag=jw-s-sound_wave,scores={jw-s_life=..0}]
