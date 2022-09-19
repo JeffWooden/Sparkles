@@ -199,10 +199,10 @@ item:  'items'
 *Please, note that `sculk_charge`, `shriek` and `vibration` particles don't/will not have parameter. Make sure to check any update related.*
 
 `blocks`' parameter
-See [`blocks.md`](`./blocks.md`).
+See [`blocks.md`](`blocks.md`).
 
 `items`' parameter
-See [`items.md`](`./items.md`)
+See [`items.md`](`items.md`)
 
 `color`'s parameter
-See [`colors.md`](`./colors.md`)
+See [`colors.md`](`colors.md`)
