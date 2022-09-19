@@ -14,7 +14,7 @@
 	- Firework data values (type: 1)
 	- Beam data values (type: 3)
 	- Fountain data values (type: 4)
-	- Comet data values
+	- Comet data values (type: 5)
 5. Library
 	- Why a library?
 	- Content
