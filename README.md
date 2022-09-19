@@ -1,3 +1,5 @@
+<img src="icon.png" align="right" width="64" height="64"/>
+
 # Sparkles (v1.0)
 ## What is it?
 
