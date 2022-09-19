@@ -24,4 +24,4 @@ Creator Page: https://www.planetminecraft.com/member/jeffwooden/
 ```
 
 ## Documentation
-This datapack requires some knowledge to be used properly. Please, check the [documentation](docs/main.md) for more information.
+This datapack requires some knowledge to be used properly. Please, check the [documentation](./docs/MAIN.md) for more information.
