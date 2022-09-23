@@ -8,6 +8,12 @@ execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-beam] at @s run function 
 #   Fontaine
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-fountain] at @s run function jw-s_shell:fountain/main
 execute as @e[type=snowball,tag=jw-s-fountain_jet] at @s run function #jw-s:particle_id
+scoreboard players remove @e[type=snowball,tag=jw-s-fountain_jet] jw-s_life 1
+kill @e[type=snowball,tag=jw-s-fountain_jet,scores={jw-s_life=..0}]
 
 #   Comète
 execute as @e[type=#jw-s:shell,tag=jw-s-shell,tag=jw-s-comet] at @s run function jw-s_shell:comet/main
+
+#   Ondes sonores
+execute as @e[type=marker,tag=jw-s-sound_wave] at @s run function jw-s_shell:sound/main
+kill @e[type=marker,tag=jw-s-sound_wave,scores={jw-s_life=..0}]
