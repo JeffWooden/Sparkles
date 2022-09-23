@@ -132,7 +132,7 @@ All the entity data of a [Firework Rocket](https://minecraft.fandom.com/wiki/Fir
 		- [🔢] **fuse**: in ticks - the amount of time before the next coordinate.
 		- [📁] **pos**: 3 TAG_Doubles describing the current X, Y, and Z beam's block target.
 		- [💠] **particle**: same as `data.beam.particle`
-		- [🔢] **length**: in blocks - defines the length of the beam facing the beam's block target. Default is `60`, max is `200`.
+		- [🔢] **length**: in blocks*0.5 - defines the length of the beam facing the beam's block target. Default is `60` (= 30 blocks), max is `200` (= 100 blocks).
 
 ### Fountain Data Values (`type:4`)
 💠 __shell__:
