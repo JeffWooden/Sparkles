@@ -15,11 +15,13 @@
 	- Beam data values (type: 3)
 	- Fountain data values (type: 4)
 	- Comet data values (type: 5)
-5. Library
+5. Library (optional)
 	- Why a library?
 	- Content
 		- Particle IDs
 		- Particle Options
+6. Resource Pack (optional)
+	- Why a resource pack?
 
 ## How to install it?
 
@@ -159,7 +161,7 @@ All the entity data of a [Firework Rocket](https://minecraft.fandom.com/wiki/Fir
 			- [🔢] **duration**: in ticks - the steps of a revolution (e.g. `2` will divide the revolution's time by half). The default is `1`.
 
 
-## Library
+## Library (optional)
 
 ### Why a library?
 
@@ -206,3 +208,10 @@ See [`items.md`](items.md)
 
 `color`'s parameter
 See [`colors.md`](colors.md)
+
+## Resource pack (optional)
+
+## Why a resource pack?
+
+Since the fountains and comets use snowballs to display invisible projectiles, you'll need a base for your custom resource packs.
+There are also custom sounds for the launching of shells.
