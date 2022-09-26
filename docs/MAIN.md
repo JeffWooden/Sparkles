@@ -25,13 +25,13 @@
 
 ## How to install it?
 
-Download the latest version (on PMC or Github) and place it into your `datapacks` world's folder.
+Download the latest version (on PMC or Github) and place it into your world's `datapacks` folder.
 
 Then, add its library `Sparkles-library` (more on that later).
 
 After uploading these datapacks, reload your world/server by performing the `/reload` command.
 
-Therefore, you're all done: you can now use Sparkle for your performances!
+Thus, you're all done: you can now use Sparkles for your shows!
 
 ## Getting started
 
