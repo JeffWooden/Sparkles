@@ -1,6 +1,16 @@
 {
-    "pack": {
-        "description": "Datapack made by @JeffWooden_",
-        "pack_format": 10
-    }
+  "pack": {
+    "pack_format": 48,
+    "description": [
+      {
+        "text": "Collection of tools to enhance the creation of pyrotechnical shows in the game\n",
+        "color": "#c9e9e2",
+        "italic": false
+      },
+      {
+        "text": "By @JeffWooden (see https://github.com/JeffWooden/Sparkles)",
+        "color": "#4c64b1"
+      }
+    ]
+  }
 }
