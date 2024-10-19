@@ -1,0 +1,1 @@
+$particle $(id) $(pos) $(delta) $(speed) $(count) $(display_mode) $(viewers)
