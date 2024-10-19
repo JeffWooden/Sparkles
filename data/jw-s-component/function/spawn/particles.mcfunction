@@ -1,5 +1,3 @@
-#>>DEBUG
-#tellraw @a[tag=debug] "jw-s-component/function/spawn/particles"
 ## TODO : let the frame one being executed once summoned !
 # Check number of particles
 execute store result score l jws-calc run data get storage jw-s:component data.particles
