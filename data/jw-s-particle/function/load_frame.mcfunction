@@ -3,8 +3,6 @@ data modify storage jw-s:component particle_settings.speed set from entity @s da
 data modify storage jw-s:component particle_settings.count set from entity @s data.frames[-1].particle_settings.count
 data modify storage jw-s:component particle_settings.display_mode set from entity @s data.frames[-1].particle_settings.display_mode
 data modify storage jw-s:component particle_settings.viewers set from entity @s data.frames[-1].particle_settings.viewers
-data modify storage jw-s:component particle_settings.settings set from entity @s data.frames[-1].particle_settings.settings
+data modify storage jw-s:component particle_settings merge from entity @s data.frames[-1].particle_settings.configurations
 data modify storage jw-s:component particle_settings.id set from entity @s data.frames[-1].particle_settings.id
 data modify storage jw-s:component particle_settings.pos set from entity @s data.frames[-1].co
-
-tellraw @a [{"nbt": "particle_settings.viewers","storage": "jw-s:component"},{"text":"   "},{"nbt":"data.frames[-1].particle_settings.viewers","entity":"@s"}]
