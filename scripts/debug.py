@@ -26,9 +26,7 @@ def toggleDebug(filepath, mode=False):
 		print(f"An error occurred: {e}")
 		raise e
 	
-	match = re.search(r"tellraw @a\[tag=debug\]", lines[1])
-	has_debug_lines = lines[0].startswith("#>>DEBUG") and (match is not None)
-	print(match)
+	has_debug_lines = len(lines) > 0 and lines[0].startswith("#>>DEBUG") and (re.search(r"tellraw @a\[tag=debug\]", lines[1]) is not None)
 	if mode and not has_debug_lines:
 		filename = filepath
 		match = re.search(r"(data)\/(.*?)\.mcfunction$", filename)
