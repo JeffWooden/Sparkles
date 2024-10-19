@@ -26,21 +26,19 @@ def toggleDebug(filepath, mode=False):
 		print(f"An error occurred: {e}")
 		raise e
 	
-	first_char = '' if mode else '#'
-	if len(lines) > 0 and lines[0].startswith("#>>DEBUG"):
-		comment = lines[1].startswith("#")
-		if mode and comment:
-			lines[1] = lines[1][1:]
-		elif not mode and not comment:
-			lines[1] = "#" + lines[1]
-	else:
+	match = re.search(r"tellraw @a\[tag=debug\]", lines[1])
+	has_debug_lines = lines[0].startswith("#>>DEBUG") and (match is not None)
+	print(match)
+	if mode and not has_debug_lines:
 		filename = filepath
 		match = re.search(r"(data)\/(.*?)\.mcfunction$", filename)
 		if match:
 			filename = match.group(2)
 		filename = re.sub(r"\\", '/', filename)
 		print(filename)
-		lines.insert(0, f"#>>DEBUG\n{first_char}tellraw @a[tag=debug] \"{filename}\"")
+		lines.insert(0, f"#>>DEBUG\n{'' if mode else '#'}tellraw @a[tag=debug] \"{filename}\"")
+	elif not mode and has_debug_lines:
+		lines = lines[2:]
 
 	with open(filepath, 'w') as file:
 		file.write('\n'.join(lines))
