@@ -1,9 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "jw-s:tick",
-        "jw-s_component:tick",
-        "jw-s_shell:tick",
-        "jw-s_timeline:tick"
-    ]
-}
