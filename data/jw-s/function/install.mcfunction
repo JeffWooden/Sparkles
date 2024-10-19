@@ -1,3 +1,5 @@
+#>>DEBUG
+#tellraw @a[tag=debug] "jw-s/function/install"
 # Lock function execution from other reload
 scoreboard players set install jws-sys 1
 

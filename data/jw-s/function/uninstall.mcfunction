@@ -1,3 +1,5 @@
+#>>DEBUG
+#tellraw @a[tag=debug] "jw-s/function/uninstall"
 scoreboard players reset install jws-sys
 
 # Server feedback

@@ -1,3 +1,5 @@
+#>>DEBUG
+#tellraw @a[tag=debug] "jw-s-component/function/spawn"
 scoreboard players reset error jws-calc
 tag @a[tag=debug] add target
 tag @a[tag=debug-error] add target
