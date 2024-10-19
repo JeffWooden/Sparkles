@@ -27,7 +27,7 @@ def toggleDebug(filepath, mode=False):
 		raise e
 	
 	has_debug_lines = len(lines) > 0 and lines[0].startswith("#>>DEBUG") and (re.search(r"tellraw @a\[tag=debug\]", lines[1]) is not None)
-	if mode and not has_debug_lines:
+	if mode and not has_debug_lines and os.path.basename(filepath) != "tick.mcfunction":
 		filename = filepath
 		match = re.search(r"(data)\/(.*?)\.mcfunction$", filename)
 		if match:
