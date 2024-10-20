@@ -5,4 +5,3 @@ data modify storage jw-s:component particle_settings.display_mode set from entit
 data modify storage jw-s:component particle_settings.viewers set from entity @s data.particle_settings.viewers
 data modify storage jw-s:component particle_settings merge from entity @s data.particle_settings.configurations
 data modify storage jw-s:component particle_settings.id set from entity @s data.particle_settings.id
-data modify storage jw-s:component particle_settings.pos set from entity @s data.frames[-1].co
