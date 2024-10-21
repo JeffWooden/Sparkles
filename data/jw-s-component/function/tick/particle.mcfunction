@@ -1,5 +1,5 @@
 # Reset particle settings values in storage
-data modify storage jw-s:component particle_settings set value {pos:"~ ~ ~",delta:"0 0 0",speed:0,count:1,display_mode:"normal",viewers:"@a[tag=!jws-low_fps]"}
+data modify storage jw-s:component particle_settings set value {pos:"~ ~ ~",delta:"0 0 0",speed:0,count:1,display_mode:"normal",viewers:"@a[tag=!jws-low_fps]",configurations:{}}
 # Global particle settings
 function jw-s-particle:load_global
 # Frame particle settings
