@@ -8,6 +8,8 @@ function jw-s-particle:load_frame
 function jw-s-particle:display with storage jw-s:component particle_settings
 
 data remove entity @s data.frames.co[-1]
+data remove entity @s data.frames.color[-1]
+data remove entity @s data.frames.scale[-1]
 data remove entity @s data.frames.l[-1]
 
 # Check remaining frames, if none is preset, kills the particle
