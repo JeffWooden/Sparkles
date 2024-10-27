@@ -15,3 +15,4 @@ data remove entity @s data.frames.l[-1]
 # Check remaining frames, if none is preset, kills the particle
 execute store result score n jws-calc run data get entity @s data.frames.l
 execute if score n jws-calc matches ..0 run kill @s
+execute store result score @s jws-next_frame run data get entity @s data.frames.l[-1]

@@ -6,4 +6,6 @@ tellraw @a ["",{"text":"Sparkles >>","bold":true,"color":"blue"},{"text":" Datap
 # Removing scoreboards
 scoreboard objectives remove jws-calc
 scoreboard objectives remove jws-debug
+scoreboard objectives remove jws-frame
+scoreboard objectives remove jws-next_frame
 scoreboard objectives remove jws-sys

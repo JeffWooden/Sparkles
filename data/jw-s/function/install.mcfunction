@@ -7,5 +7,7 @@ tellraw @a ["",{"text":"Sparkles >>","bold":true,"color":"blue"},{"text":" Datap
 # Scoreboard
 scoreboard objectives add jws-debug dummy
 scoreboard objectives add jws-calc dummy
+scoreboard objectives add jws-frame dummy
+scoreboard objectives add jws-next_frame dummy
 
 # Variables
