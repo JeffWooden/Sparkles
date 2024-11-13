@@ -1,3 +1,7 @@
+data modify storage jw-s:sparkles display_settings set from entity @s data.display_settings
+# TODO : Add frame's display settings
+data modify storage jw-s:sparkles transformation set from entity @s data.updates.transformation[-1]
+execute summon block_display run function jw-s-display:summon
 
 # Removing frame data
 data remove entity @s data.updates.l[-1]
