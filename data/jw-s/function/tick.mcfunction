@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=jws-component] at @s run function jw-s-component:tick

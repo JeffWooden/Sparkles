@@ -1,0 +1,1 @@
+execute if entity @s[tag=jws-particle] run function jw-s-component:tick/particle
