@@ -1,2 +1,2 @@
 execute as @e[type=marker,tag=jws-component] at @s run function jw-s-component:tick
-execute as @e[type=block_display,tag=jws-child] at @s run function jw-s-display:tick
+execute at @e[tag=jws-child,tag=jws-display] run particle dust{color:[1.0,0.0,0.0],scale:1} ~ ~ ~ 0 0 0 0.02 10

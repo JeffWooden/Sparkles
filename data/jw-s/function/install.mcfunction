@@ -9,5 +9,6 @@ scoreboard objectives add jws-debug dummy
 scoreboard objectives add jws-calc dummy
 scoreboard objectives add jws-frame dummy
 scoreboard objectives add jws-next_frame dummy
+scoreboard objectives add jws-id dummy
 
 # Variables

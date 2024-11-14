@@ -9,3 +9,4 @@ scoreboard objectives remove jws-debug
 scoreboard objectives remove jws-frame
 scoreboard objectives remove jws-next_frame
 scoreboard objectives remove jws-sys
+scoreboard objectives remove jws-id
